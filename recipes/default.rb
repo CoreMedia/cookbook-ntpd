@@ -15,6 +15,16 @@ yum_package 'ntp' do
   action :install
 end
 
+directory File.dirname(node['ntp']['drift_log_location']) do
+  not_if { File.exist?(node['ntp']['drift_log_location']) }
+  only_if { node['ntp']['drift_log_enabled'] }
+end
+
+directory File.dirname(node['ntp']['log_location']) do
+  not_if { File.exist?(node['ntp']['log_location']) }
+  only_if { node['ntp']['log_enabled'] }
+end
+
 service 'ntpd' do
   action [:enable, :start]
 end
