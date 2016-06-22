@@ -3,6 +3,8 @@ maintainer 'Roger Delph'
 maintainer_email 'roger.delph@gmail.com'
 license 'Apache 2.0'
 description 'Installs/Configures ntpd'
+source_url 'https://github.com/rogerdelph/cookbook-ntpd'
+issues_url 'https://github.com/rogerdelph/cookbook-ntpd/issues'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version '0.2.1'
 supports 'centos', '>= 6.7'
