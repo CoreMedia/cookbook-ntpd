@@ -6,7 +6,7 @@ description 'Installs/Configures ntpd'
 source_url 'https://github.com/rogerdelph/cookbook-ntpd'
 issues_url 'https://github.com/rogerdelph/cookbook-ntpd/issues'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '0.2.1'
+version '0.2.2'
 supports 'centos', '>= 6.7'
 supports 'redhat', '>= 6.7'
 supports 'amazon', '>= 6.7'
